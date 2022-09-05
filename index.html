@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/portfolio.css'>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#header"><span><em>T</em></span>onyDave</a>
+                </div>
+                <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times closeMenu"></i>
+                </ul>
+                <i class="fas fa-bars openMenu"></i>
+                <div class="color-switcher">
+                    <div class="switcher-btn">
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <h4>select color</h4>
+                    <div class="theme-buttons-container">
+                        <span class="theme-buttons" data-color="#27ae60" style="background:  #27ae60;"></span>
+                        <span class="theme-buttons" data-color="#2980b9" style="background:  #2980b9;"></span>
+                        <span class="theme-buttons" data-color="#924fa0" style="background:  #924fa0;"></span>
+                        <span class="theme-buttons" data-color="#f7bd4f" style="background:  #f7bd4f;"></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--------Welcome Section------------>
+    <div class="welcome-sec">
+        <div class="container-1">
+            <div class="row-1">
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Chuks</span>Tonydave</h1>
+                    <div class="anime-container"><p id="auto-type">Frontend <span class="anime-text">Web</span> Developer.... </p></div>
+                    <span class="icons">
+                        <a href="https://facebook.com/chukstonydave" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/chidiebube-david-ogbalu-b34191231" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/TonydaveChuks?t=WAUnvVvq0sD0SC5ZtBQjHw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/ogbaluchidiebubedavid" target="_blank"><i class="fab fa-github"></i></a>
+                    </span>
+                    <a class="btn btn-contact-me" href="#contact">Contact Me<i class="fas fa-paper-plane"></i></a>
+                </div>
+                <div class="header-img-col">
+                    <img src="portfolio_site_img/demobg.png" alt="my image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------Welcome Section End-------->
+    <!----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio_site_img/mydesign-img-removebg-preview.png" alt="mys image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span> Me</span></h1>
+                    <p class="description">I am a reliable self-taught frontend developer with stacks in HTML5, CSS3, Bootstrap,
+                        Javascript and currently learning python (Django). I have very strong analytical and time management skills.
+                        I believe technology makes life easier and I use technology daily for problem solving.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skills-section">
+                                    <p>HTML5: 90%</p>
+                                <div class="skills-container">
+                                <div class="skills html">.</div>
+                                </div>
+                    
+                                    <p>CSS3: 80%</p>
+                                <div class="skills-container">
+                                <div class="skills css">.</div>
+                                </div>
+                                
+                                <p>Bootstrap: 60%</p>
+                                <div class="skills-container">
+                                <div class="skills bootstrap">.</div>
+                                </div>
+                    
+                                    <p>JavaScript: 50%</p>
+                                <div class="skills-container">
+                                <div class="skills js">.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Full stack web development training/Internship at Zuri Team Inc.</li>
+                                <li><span>Jul 2022-Aug 2022</span><br>Internshala Campus Ambassador</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>May 2022 - Current</span><br>Full Stack web development training at Zuri Team Inc.</li>
+                                <li><span>2017</span><br>SSCE from Holy Family High School Anambra Nig.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----about end---->
+    <!--------Testimonials------------>
+    <div class="b0x-container">
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-check"></i>
+                <h3>5+</h3>
+                <p>Projects Done</p>
+            </div>
+        </div>
+    
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-check"></i>
+                <h3>5+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fa fa-check"></i>
+                <h3>5+</h3>
+                <p>Team Projects</p>
+            </div>
+        </div>
+    </div>
+    <!--------Testimonialse End------->
+    <!---services--------->
+    <article>
+        <h1>Port<span>folio</span></h1>
+    </article>
+    <section id="portfolio">
+        <div class="swiper mySwiper container card-container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/Shopping-Cart.png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name">Shopping Cart With Javascript</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>A Responsive Shopping Cart(Basket)</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/Design with flex and grid task - Google Chrome 14_07_2022 20_42_11 (2).png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name"> Huddle Landing Page</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>A Responsive Landing Page, one of my intenship task.</p>
+                                <a href="https://ogbaluchidiebubedavid.github.io/huddle-landing-page-design/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/js-calc.png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name">Calculator With Javascript</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>Simple arithmetic operator calculator using javascript</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/personal-portfolio-sample.png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name">Personal Portfolio Website</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>A simple portfolio website template</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/Untitled - Google Chrome 02_06_2022 14_46_39.png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name">Multi-paged Portfolio Website</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>A Responsive multi-paged personal portfolio website template</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="portfolio_site_img/Shopping-Cart.png" alt="work image">
+                        </div>
+
+                        <div class="description">
+                            <h3 class="name">Shopping Cart With Javascript</h3>
+                        </div>
+                        
+                        <div class="full-description">
+                            <p>A Responsive Shopping Cart(Basket)</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    <!-----services End--->
+    <!----Contact---->
+    <div id="contact">
+        <div class="container">
+            <div class="row last">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact <span>Me</span></h1>
+                    <p><i class="fas fa-paper-plane"></i>davechuks65@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/chukstonydave" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/chidiebube-david-ogbalu-b34191231" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/TonydaveChuks?t=WAUnvVvq0sD0SC5ZtBQjHw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/ogbaluchidiebubedavid" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://bit.ly/3n1Fos9" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a class="btn btn-contact-me cv" href="portfolio_site_img/Ogbalu_chidiebube_davidCv.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-contact-me cv">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact End-->
+    <div class="copyright">
+        <p>Copyright &#169 Tonydave 2022 - All rights reserverd</p>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>const scriptURL = 'https://script.google.com/macros/s/AKfycbyBuLIMlignRFw_0VzQIHBVdZ5V653wgzZ2cSTUPyxb36ww5Z62zCXk0tOu_flwzVkL/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message Sent Successfully'
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+<script src="portfolio.js"></script>
+</html>
