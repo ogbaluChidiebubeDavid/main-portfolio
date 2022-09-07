@@ -755,6 +755,10 @@ form .btn{
         margin-top: 5px !important;
     }
 
+    .row-1{
+        margin-top: 10px !important;
+    }
+
     .header-img-col::after{
         content: none !important;
     }
